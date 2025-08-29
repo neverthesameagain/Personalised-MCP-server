@@ -1,1 +1,6 @@
 
+fastmcp
+pypandoc
+markdownify
+readabilipy
+requests
