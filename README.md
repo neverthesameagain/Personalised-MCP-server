@@ -154,13 +154,13 @@ Once the service is public:
 
 ---
 
-## 🧪 Quick Smoke Test (Without Puch)
+##  Quick Smoke Test (Without Puch)
 
 You can sanity-check that the service is up (root will 404, that’s expected). For real checks, connect via Puch or hit the MCP route with an authorized client. If you must curl, confirm the service port and health by requesting `/` and expecting `404` rather than connection refused.
 
 ---
 
-## 🛠 Troubleshooting
+##  Troubleshooting
 
 * **`404 Not Found` at `/`** – Expected. Use `/mcp` with an MCP client (e.g., Puch).
 * **`Failed to read or convert resume`** – Ensure Pandoc is installed and `resume_path` is correct. Try converting locally with `pandoc <file> -t gfm -o /tmp/test.md`.
@@ -169,25 +169,10 @@ You can sanity-check that the service is up (root will 404, that’s expected). 
 
 ---
 
-## 🔒 Security Notes
+##  Security Notes
 
 * The included `SimpleBearerAuthProvider` validates a **single** bearer token. For production, use a proper key management solution.
 * Avoid committing your real token or phone number. Prefer **environment variables**.
 * Remove your resume from the repository once the application process is complete.
 
 ---
-
-## 📄 License
-
-MIT (or your preferred license)
-
----
-
-## 👤 Author
-
-**Your Name**
-
-* LinkedIn: [https://linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-* GitHub: [https://github.com/your-username](https://github.com/your-username)
-
-*Built as a personal project to integrate with Puch AI and demonstrate MCP-based tooling.*
